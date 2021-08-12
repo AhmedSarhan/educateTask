@@ -110,7 +110,7 @@ const Home: NextPage<HomePageProps> = ({
 				</div>
 				<div className={styles.pagination}>
 					<div className={styles.formGroup}>
-						<label>Courses per page</label>
+						<label>Courses per page </label>
 						<select
 							value={coursesPerPage}
 							onChange={(e) => setCoursesPerPage(+e.target.value)}
@@ -121,6 +121,7 @@ const Home: NextPage<HomePageProps> = ({
 								</option>
 							))}
 						</select>
+						<span style={{ marginInlineStart: '5px' }}> of {total}</span>
 					</div>
 					<Pagination
 						lastPage={lastPageState}
